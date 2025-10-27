@@ -1,0 +1,235 @@
+/* ---- STYLE GLOBAL ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* ---- EN-TÊTE ---- */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    animation: fadeIn 1.5s ease;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #00bcd4;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #fff;
+}
+
+/* ---- SECTION À PROPOS ---- */
+#about {
+    background: linear-gradient(135deg, #1a1a1a, #222);
+    color: #eaeaea;
+    text-align: center;
+    padding: 80px 15%;
+    border-left: 3px solid #00bcd4;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.1);
+    animation: fadeInUp 1.5s ease;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* ---- COMPÉTENCES ---- */
+/* grille de logos */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.skill-logo {
+  text-align: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-logo img {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4));
+}
+
+.skill-logo:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.skill-logo p {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #c9d1d9;
+}
+
+
+/* ---- FORMATION ---- */
+#education {
+    background: linear-gradient(135deg, #181818, #202020);
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#education h2 {
+    margin-bottom: 40px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    background: #121212;
+    border-left: 3px solid #00bcd4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ---- PROJETS ---- */
+#projects {
+    background-color: #0d0d0d;
+    overflow: hidden;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+/* ---- CONTACT ---- */
+#contact {
+    background: linear-gradient(135deg, #151515, #1e1e1e);
+    text-align: center;
+}
+
+#contact a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* ---- PIED DE PAGE ---- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #777;
+    border-top: 1px solid #222;
+}
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #00bcd4;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #222;
+}
